@@ -1,7 +1,7 @@
 # Escrow Coin
 Shell script to install an [Escrow Masternode](https://http://www.escrow-coin.com/) on a Linux server running Ubuntu 16.04. Use it on your own risk.  
-
 ***
+
 ## Installation:  
 
 wget -q https://raw.githubusercontent.com/zoldur/Escrow_Coin/master/escrow_install.sh  
@@ -28,41 +28,23 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 * Reward %: leave blank  
 9. Click **OK** to add the masternode  
 10. Click **Start All**  
-
 ***
-
-## Multiple MN on one VPS:
-
-It is possible to run multiple **Escrow** Master Nodes on the same VPS. Each MN will run under a different user you will choose during installation.  
-
-***
-
 
 ## Usage:  
-
-For security reasons **Escrow** is installed under **escrow** user, hence you need to **su - escrow** before checking:    
-
 ```
-ESCROW_USER=escrow #replace escrow with the MN username you want to check
-
-su - $ESCROW_USER  
 Escrowd masternode status  
 Escrowd getinfo  
 ```  
-
 Also, if you want to check/start/stop **Escrow** , run one of the following commands as **root**:
-
 ```
-ESCROW_USER=escrow  #replace escrow with the MN username you want to check  
-  
-systemctl status $ESCROW_USER #To check the service is running.  
-systemctl start $ESCROW_USER #To start Escrow service.  
-systemctl stop $AESCROW_USER #To stop Escrow service.  
-systemctl is-enabled $ESCROW_USER #To check whetether Escrow service is enabled on boot or not.  
+systemctl status Escrow #To check the service is running.  
+systemctl start Escrow #To start Escrow service.  
+systemctl stop Escrow #To stop Escrow service.  
+systemctl is-enabled Escrow #To check whetether Escrow service is enabled on boot or not.  
 ```  
-
 ***
 
+## Donations:
   
 Any donation is highly appreciated  
 
